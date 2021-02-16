@@ -25,9 +25,9 @@ let upload = multer({
 
      //store file
         upload(req,res,async (err)=>{
-            if(!req.file){
-                res.json({error:'File is missing'});
-            }
+//             if(!req.file){
+//                 res.json({error:'File is missing'});
+//             }
             if(err){
                 return res.status(500).send({error:err.message})
             }
